@@ -13,28 +13,28 @@
   </head>
   <body class="inter-normal">
     <!-- -------------Header section---------------- -->
-    <header class="container mx-auto mt-4">
-      <nav class="flex sm:px-4 md:p-0 lg:p-0 justify-between items-center">
+    <header class="container mx-auto">
+      <nav class="flex justify-between items-center mt-6">
         <div>
           <img
-            class="sm:w-16 md:w-full lg:w-full"
+            class="w-16 ml-6 md:w-full md:ml-0 lg:w-full lg:ml-0"
             src="./assets/logo.png"
             alt=""
           />
         </div>
         <div class="flex items-center gap-12">
-          <ul class="flex items-center gap-12 sm:hidden md:flex lg:flex">
-            <li class="font-bold">
+          <ul class="flex items-center gap-12">
+            <li class="font-bold hidden md:inline lg:inline">
               <a href="">Home</a>
             </li>
-            <li class="text-[#8987A1]">
+            <li class="text-[#8987A1] hidden md:inline lg:inline">
               <a href="">Shop</a>
             </li>
-            <li class="text-[#8987A1]">
+            <li class="text-[#8987A1] hidden md:inline lg:inline">
               <a href="">About Us</a>
             </li>
           </ul>
-          <div>
+          <div class="mr-6 md:mr-0 lg:mr-0">
             <a href=""
               ><span><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</span>
             </a>
@@ -45,7 +45,7 @@
 
     <!-- -------------Main section---------------- -->
     <main>
-      <section class="mx-auto mt-56 container flex items-center">
+      <section class="mx-auto mt-56 container sm::flex-col-reverse md:flex lg:flex items-center ">
         <div class="w-1/2 mt-auto">
           <h1 class="noto-serif text-[65px]">
             ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span>
