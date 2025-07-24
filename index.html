@@ -46,7 +46,9 @@
     <!-- -------------Main section---------------- -->
     <main>
       <!-- -----------Hero Section---------------- -->
-      <section class="mx-auto container flex flex-col-reverse lg:flex-row">
+      <section
+        class="mx-auto container flex flex-col-reverse lg:flex-row lg:items-center"
+      >
         <div class="m-6 md:m-4 lg:m-0 w-1/2">
           <h1 class="noto-serif text-2xl lg:text-[65px]">
             ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span>
@@ -151,7 +153,7 @@
               ADD TO CART
             </button>
           </div>
-          <div>
+          <div class="hidden lg:inline">
             <img
               class="w-fit m-auto mb-[30px]"
               src="./assets/sample-flower-image.png"
@@ -163,7 +165,7 @@
               ADD TO CART
             </button>
           </div>
-          <div>
+          <div class="hidden lg:inline">
             <img
               class="w-fit m-auto mb-[30px]"
               src="./assets/sample-flower-image.png"
@@ -298,11 +300,73 @@
           </div>
         </div>
       </section>
+
+      <!-- ------------Join Section----------------- -->
+
+      <section class="mt-[120px]">
+        <div
+          class="bg-cover bg-center w-full h-[276px] lg:h-[533px] flex flex-col justify-center items-center"
+          style="background-image: url(./assets/news-letter-bg.png)"
+        >
+          <div>
+            <h3
+              class="text-2xl text-white lg:text-[50px] noto-serif font-bold mb-4 text-center"
+            >
+              Join the colorful Bunch
+            </h3>
+          </div>
+          <div class="flex">
+            <input
+              class="bg-white px-5 py-4 w-[218px] lg:w-[620px] text-black/50"
+              type="email"
+              name=""
+              id=""
+              placeholder="Write Email"
+            />
+            <button class="bg-[#E95A08] text-white font-semibold px-14">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- -------------Footer section---------------- -->
-    <footer>
-      <div class="bg-amber-700 h-80 mt-52"></div>
+    <footer
+      class="container flex flex-col lg:flex-row justify-between mx-auto my-12 gap-y-8"
+    >
+      <div class="mx-4">
+        <img class="mb-4" src="./assets/logo.png" alt="" />
+        <p class="text-[22px] text-black/50">
+          Indulge your senses with the <br />
+          beauty and fragrance of our fresh <br />
+          flower shop.
+        </p>
+      </div>
+      <div class="mx-4">
+        <ul class="text-[#6B7280] space-y-9">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="mx-4">
+        <ul class="text-[#6B7280] space-y-9">
+          <li>Feature</li>
+          <li>Pricing</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Help Center</li>
+        </ul>
+      </div>
+      <div class="flex gap-6 mx-4">
+        <img class="w-9 h-9" src="./assets/icon-linkedin.png" alt="" />
+        <img class="w-9 h-9" src="./assets/icon-twitter.png" alt="" />
+        <img class="w-9 h-9" src="./assets/icon-facebook.png" alt="" />
+        <img class="w-9 h-9" src="./assets/icon-youtube.png" alt="" />
+      </div>
     </footer>
   </body>
 </html>
